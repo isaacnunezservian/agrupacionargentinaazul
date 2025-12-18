@@ -1,0 +1,148 @@
+/* ============================================
+   ARGENTINA AZUL - ESTILOS GLOBALES DE APP
+   ============================================ */
+
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Botones principales */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--color-blue);
+  color: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+  background: var(--color-navy);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-blue);
+  border: 2px solid var(--color-blue);
+}
+
+.btn-secondary:hover {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+/* Títulos de sección */
+.section-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-family: var(--font-display);
+  color: var(--color-navy);
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: var(--color-navy);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  opacity: 0.85;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Elementos decorativos de ola */
+.wave-decoration {
+  position: absolute;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wave-decoration.wave-top {
+  top: -50px;
+  right: 0;
+  width: 300px;
+  animation: waveAnimation 15s ease-in-out infinite;
+}
+
+.wave-decoration.wave-bottom {
+  bottom: -50px;
+  left: 0;
+  width: 250px;
+  animation: waveAnimation 12s ease-in-out infinite reverse;
+}
+
+/* Grid responsive */
+.grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Cards */
+.card {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-blue), var(--color-navy));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+}

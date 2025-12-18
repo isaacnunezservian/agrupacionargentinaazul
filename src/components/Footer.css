@@ -1,0 +1,116 @@
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: var(--spacing-xl) 0 var(--spacing-md) 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+  text-align: center;
+}
+
+/* Footer Logo */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-wave {
+  color: var(--color-blue);
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.footer-agrupacion {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--color-white);
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.footer-argentina {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-blue);
+  font-weight: 400;
+}
+
+/* Footer Info */
+.footer-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: var(--color-white);
+  font-size: 0.95rem;
+  opacity: 0.8;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-blue);
+  transition: width var(--transition-medium);
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--color-blue);
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.footer-bottom p {
+  font-size: 0.875rem;
+  opacity: 0.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}
