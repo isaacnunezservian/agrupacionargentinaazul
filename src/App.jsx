@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Impact from './components/Impact';
+import Team from './components/Team';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import './App.css';
@@ -36,6 +37,7 @@ function App() {
       <Hero />
       <About />
       <Impact />
+      <Team />
       <CallToAction />
       <Footer />
     </div>

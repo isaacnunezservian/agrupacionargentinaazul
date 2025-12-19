@@ -24,14 +24,11 @@ const Hero = () => {
 
   return (
     <section className="hero" id="hero">
-      <div className="hero-waves">
-        <svg className="wave-bg wave-1" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,50 C300,100 900,0 1200,50 L1200,120 L0,120 Z" fill="currentColor" opacity="0.1"/>
-        </svg>
-        <svg className="wave-bg wave-2" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,70 C400,20 800,100 1200,70 L1200,120 L0,120 Z" fill="currentColor" opacity="0.05"/>
-        </svg>
-      </div>
+      <video className="hero-video" autoPlay muted loop playsInline>
+        <source src="/video.mp4" type="video/mp4" />
+      </video>
+      
+      <div className="hero-overlay"></div>
 
       <div className="container hero-content">
         <h1 className="hero-title">
@@ -67,7 +64,9 @@ const Hero = () => {
       </div>
 
       <div className="scroll-indicator">
-        <div className="scroll-line"></div>
+        <svg className="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 5v14m0 0l-7-7m7 7l7-7"/>
+        </svg>
       </div>
     </section>
   );

@@ -9,8 +9,15 @@ const Footer = () => {
         <div className="footer-logo">
           <svg className="footer-wave" width="50" height="50" viewBox="0 0 200 200" fill="none">
             <path 
-              d="M50 100C70 80, 90 80, 110 100C130 120, 150 120, 170 100" 
-              stroke="currentColor" 
+              d="M50 80C70 60, 90 60, 110 80C130 100, 150 100, 170 80" 
+              stroke="#ffffff" 
+              strokeWidth="8" 
+              strokeLinecap="round"
+              fill="none"
+            />
+            <path 
+              d="M50 120C70 100, 90 100, 110 120C130 140, 150 140, 170 120" 
+              stroke="#ffffff" 
               strokeWidth="8" 
               strokeLinecap="round"
               fill="none"
@@ -33,10 +40,10 @@ const Footer = () => {
           <a href="https://fundacionargentinaazul.org" target="_blank" rel="noopener noreferrer">
             Fundación Argentina Azul
           </a>
-          <a href="https://www.instagram.com/fundacionargentinaazul/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/argentina.azul/" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
-          <a href="https://www.facebook.com/fundacionargentinaazul" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/agrupacionargentinaazul/" target="_blank" rel="noopener noreferrer">
             Facebook
           </a>
         </div>
