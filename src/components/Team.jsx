@@ -116,6 +116,117 @@ const Team = () => {
           </div>
         </div>
 
+        {/* Comunicación Institucional */}
+        <div className="communication-section">
+          <div className="communication-header animate-on-scroll">
+            <span className="team-badge">Dirección de Comunicación Institucional</span>
+          </div>
+
+          <div className="communication-grid">
+            {/* Leandro Cuenca - Director */}
+            <div className="team-card team-card-communication animate-on-scroll">
+              <div className="team-card-image">
+                <img src="/leandro.jpg" alt="Leandro Cuenca" />
+                <div className="team-card-overlay"></div>
+                <div className="communication-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="team-card-content">
+                <div className="name-container">
+                  <h4 className="team-card-name">Leandro Cuenca</h4>
+                  <div className="name-underline"></div>
+                </div>
+                <div className="team-card-roles">
+                  <span className="team-role-badge role-director">
+                    <span className="badge-icon">✦ </span>
+                    Director
+                    
+                  </span>
+                </div>
+                <p className="team-card-position">
+                  Dirección de Comunicación Institucional
+                </p>
+                <a 
+                  href="https://www.linkedin.com/in/leandrocuellarok/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="team-linkedin-link"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                  Conectar en LinkedIn
+                </a>
+                <div className="card-shine"></div>
+              </div>
+            </div>
+
+            {/* Matías Coriña */}
+            <div className="team-card team-card-communication animate-on-scroll">
+              <div className="team-card-image">
+                <img src="/matias.jpg" alt="Matías Coriña" />
+                <div className="team-card-overlay"></div>
+                <div className="communication-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="team-card-content">
+                <div className="name-container">
+                  <h4 className="team-card-name">Matías Coriña</h4>
+                  <div className="name-underline"></div>
+                </div>
+                <div className="team-card-roles">
+                  <span className="team-role-badge role-member">
+                    <span className="badge-icon">●</span>
+                    Integrante
+                  </span>
+                </div>
+                <p className="team-card-position">
+                  Dirección de Comunicación Institucional
+                </p>
+                <div className="card-shine"></div>
+              </div>
+            </div>
+
+            {/* Yamila Schwarzkopf */}
+            <div className="team-card team-card-communication animate-on-scroll">
+              <div className="team-card-image">
+                <img src="/yamila.jpg" alt="Yamila Schwarzkopf" />
+                <div className="team-card-overlay"></div>
+                <div className="communication-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="team-card-content">
+                <div className="name-container">
+                  <h4 className="team-card-name">Yamila Schwarzkopf</h4>
+                  <div className="name-underline"></div>
+                </div>
+                <div className="team-card-roles">
+                  <span className="team-role-badge role-member">
+                    <span className="badge-icon">●</span>
+                    Integrante
+                  </span>
+                </div>
+                <p className="team-card-position">
+                  Dirección de Comunicación Institucional
+                </p>
+                <p className="team-card-bio">
+                  Referente en el Partido de San Martín (Provincia de Bs. As.)
+                </p>
+                <div className="card-shine"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Partner Tecnológico - Sección Destacada */}
         <div className="tech-partner-section animate-on-scroll">
           <div className="tech-partner-header">

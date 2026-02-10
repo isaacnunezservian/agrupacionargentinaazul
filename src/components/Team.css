@@ -275,7 +275,7 @@
 .team-card-name {
   font-family: var(--font-display);
   font-size: 1.75rem;
-  color: var(--color-navy);
+  color: white;
   margin: 0;
   position: relative;
   display: inline-block;
@@ -827,7 +827,159 @@
   transform: scale(1.15) rotate(5deg);
 }
 
+/* ============================================
+   COMMUNICATION SECTION - COMUNICACIÓN INSTITUCIONAL
+   ============================================ */
+
+.communication-section {
+  margin: var(--spacing-2xl) 0;
+  padding: var(--spacing-2xl) 0;
+  position: relative;
+}
+
+.communication-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-navy) 50%, transparent 100%);
+  opacity: 0.2;
+}
+
+.communication-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.communication-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-subtitle {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-family: var(--font-display);
+  color: var(--color-navy);
+  margin-top: var(--spacing-sm);
+}
+
+.communication-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card-communication {
+  border: 2px solid rgba(92, 157, 203, 0.2);
+  background: linear-gradient(180deg, #f8fbfd 0%, var(--color-white) 100%);
+}
+
+.team-card-communication:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 51, 102, 0.15);
+  border-color: var(--color-blue);
+}
+
+.communication-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-navy) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(92, 157, 203, 0.4);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.team-card-communication:hover .communication-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 24px rgba(92, 157, 203, 0.6);
+}
+
+.communication-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-white);
+}
+
+.role-director {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  color: white;
+}
+
+.role-director span {
+  color: var(--color-white);
+}
+
+.role-member {
+  background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-navy) 100%);
+  box-shadow: 0 4px 12px rgba(92, 157, 203, 0.3);
+  color: white;
+}
+
+.team-linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--spacing-md);
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(135deg, #0077B5 0%, #00a0dc 100%);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+}
+
+.team-linkedin-link:hover {
+  background: linear-gradient(135deg, #00a0dc 0%, #0077B5 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4);
+}
+
+.team-linkedin-link svg {
+  transition: transform 0.3s ease;
+}
+
+.team-linkedin-link:hover svg {
+  transform: scale(1.1) rotate(5deg);
+}
+
 /* Responsive */
+@media (max-width: 1200px) {
+  .communication-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .communication-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .section-subtitle {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+}
+
 @media (max-width: 968px) {
   .team-grid {
     grid-template-columns: 1fr;
