@@ -146,9 +146,7 @@ const Team = () => {
                     
                   </span>
                 </div>
-                <p className="team-card-position">
-                  Dirección de Comunicación Institucional
-                </p>
+               
                 <a 
                   href="https://www.linkedin.com/in/leandrocuellarok/" 
                   target="_blank" 
