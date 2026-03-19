@@ -1,0 +1,198 @@
+.acui-pricing {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--color-gray);
+}
+
+.acui-pricing-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.acui-pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.acui-pricing-card {
+  position: relative;
+  background: var(--color-white);
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 12px 60px rgba(29, 56, 94, 0.12);
+  border: 2px solid rgba(76, 175, 80, 0.2);
+  overflow: hidden;
+}
+
+.acui-pricing-shimmer {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(76, 175, 80, 0.04) 0%, transparent 70%);
+  animation: acuiShimmerRotate 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes acuiShimmerRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.acui-pricing-card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.acui-pricing-label {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-navy), var(--color-blue));
+  color: var(--color-white);
+  padding: 0.35rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-body);
+}
+
+.acui-pricing-amount {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.acui-pricing-currency {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--color-navy);
+  opacity: 0.6;
+}
+
+.acui-pricing-value {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  color: var(--color-navy);
+  line-height: 1;
+}
+
+.acui-pricing-period {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #5a6a7e;
+  margin-left: 0.5rem;
+}
+
+.acui-pricing-desc {
+  font-size: 0.95rem;
+  color: #5a6a7e;
+  margin: 0;
+}
+
+.acui-pricing-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(29, 56, 94, 0.1), transparent);
+  margin: 2rem 0;
+}
+
+.acui-pricing-includes h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.acui-pricing-includes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.acui-pricing-includes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  font-size: 0.95rem;
+  color: var(--color-navy);
+  line-height: 1.5;
+}
+
+.acui-pricing-includes li svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.acui-pricing-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.08), rgba(255, 193, 7, 0.04));
+  border: 1px solid rgba(255, 193, 7, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--color-navy);
+  line-height: 1.6;
+}
+
+.acui-pricing-highlight svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.acui-pricing-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  background: linear-gradient(135deg, #4caf50, #2d8f4e);
+  color: var(--color-white) !important;
+  padding: 1.15rem 2rem;
+  border-radius: 14px;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 25px rgba(76, 175, 80, 0.35);
+  margin-bottom: 1rem;
+}
+
+.acui-pricing-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 35px rgba(76, 175, 80, 0.5);
+}
+
+.acui-pricing-spots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #5a6a7e;
+  margin: 0;
+}
+
+.acui-pricing-spots-icon {
+  font-size: 1rem;
+}
+
+.acui-pricing-spots strong {
+  color: var(--color-navy);
+}
+
+@media (max-width: 768px) {
+  .acui-pricing-card {
+    padding: 2rem 1.5rem;
+  }
+}

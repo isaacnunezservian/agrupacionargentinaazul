@@ -80,13 +80,12 @@
 
 .hero-subtitle {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  margin-bo1;
+  margin-bottom: 1rem;
   font-weight: 500;
   line-height: 1.7;
   text-shadow: 0 3px 12px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.4);
   animation: fadeIn 1s ease-out 0.7s both;
-  letter-spacing: 0.5px4);
-  animation: fadeIn 1s ease-out 0.7s both;
+  letter-spacing: 0.5px;
 }
 
 /* Estadísticas */

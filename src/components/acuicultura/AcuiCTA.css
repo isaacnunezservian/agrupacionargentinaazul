@@ -1,0 +1,119 @@
+.acui-final-cta {
+  position: relative;
+  padding: clamp(5rem, 10vw, 8rem) 0;
+  background: linear-gradient(135deg, #1d385e 0%, #2a4d7a 50%, #1d385e 100%);
+  overflow: hidden;
+}
+
+.acui-final-cta-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.acui-final-cta-wave {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  opacity: 0.04;
+}
+
+.acui-wave-1 {
+  top: -200px;
+  right: -100px;
+  background: radial-gradient(circle, #4caf50, transparent 70%);
+}
+
+.acui-wave-2 {
+  bottom: -300px;
+  left: -200px;
+  background: radial-gradient(circle, var(--color-blue), transparent 70%);
+}
+
+.acui-final-cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.acui-final-cta-content {
+  text-align: center;
+}
+
+.acui-final-cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--color-white);
+  line-height: 1.15;
+  margin-bottom: 2.5rem;
+}
+
+.acui-final-cta-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.acui-final-cta-benefit {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.acui-final-cta-benefit svg {
+  flex-shrink: 0;
+}
+
+.acui-final-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, #4caf50, #2d8f4e);
+  color: var(--color-white) !important;
+  padding: 1.25rem 3rem;
+  border-radius: 16px;
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 30px rgba(76, 175, 80, 0.35);
+  margin-bottom: 1.5rem;
+}
+
+.acui-final-cta-btn:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(76, 175, 80, 0.5);
+}
+
+.acui-final-cta-urgency {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.acui-final-cta-urgency strong {
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+  .acui-final-cta-btn {
+    width: 100%;
+    padding: 1.1rem 2rem;
+    font-size: 1.05rem;
+  }
+
+  .acui-final-cta-benefit {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+}

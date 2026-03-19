@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -6,11 +7,11 @@ import Impact from './components/Impact';
 import Team from './components/Team';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
+import AcuiculturaPage from './components/acuicultura/AcuiculturaPage';
 import './App.css';
 
-function App() {
+function HomePage() {
   useEffect(() => {
-    // Intersection Observer para animaciones on scroll
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -100px 0px'
@@ -24,7 +25,6 @@ function App() {
       });
     }, observerOptions);
 
-    // Observar todos los elementos con clase animate-on-scroll
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
 
@@ -41,6 +41,15 @@ function App() {
       <CallToAction />
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/acuicultura" element={<AcuiculturaPage />} />
+    </Routes>
   );
 }
 
