@@ -2,10 +2,10 @@ import './AcuiInstructor.css';
 
 function AcuiInstructor() {
   const gallery = [
-    { src: '/acuicultura/hero-catania-pez.jpg', alt: 'Eduardo Catania con pez de acuicultura' },
-    { src: '/acuicultura/catania-carpa.jpg', alt: 'Catania con carpa en instalaciones' },
-    { src: '/acuicultura/catania-tilapia.jpg', alt: 'Catania mostrando tilapia de gran tamaño' },
-    { src: '/acuicultura/cosecha-tilapias.jpg', alt: 'Cosecha masiva de tilapias en criadero' },
+    { src: '/acuicultura/eduardo-acuaponia.jpg', alt: 'Eduardo Catania con lechugas hidropónicas en invernadero de acuaponía' },
+    { src: '/acuicultura/eduardo-tilapia-noche.jpg', alt: 'Eduardo Catania con tilapia — toma cenital nocturna' },
+    { src: '/acuicultura/eduardo-tilapia-grande.jpg', alt: 'Eduardo Catania sosteniendo tilapia de gran tamaño' },
+    { src: '/acuicultura/grupo-fongar.jpg', alt: 'Eduardo Catania en instalación de tanques azules' },
   ];
 
   return (
@@ -20,8 +20,8 @@ function AcuiInstructor() {
           <div className="acui-instructor-photo animate-on-scroll">
             <div className="acui-instructor-img-wrapper">
               <img
-                src="/acuicultura/catania-tilapia-azul.jpg"
-                alt="Eduardo Rubén Catania — Especialista en Acuicultura"
+              src="/acuicultura/eduardo-perfil.jpg"
+              alt="Eduardo Rubén Catania — Especialista en Acuicultura Controlada"
                 className="acui-instructor-img"
               />
               <div className="acui-instructor-ring"></div>
@@ -31,8 +31,8 @@ function AcuiInstructor() {
 
           <div className="acui-instructor-info animate-on-scroll">
             <h3 className="acui-instructor-name">Eduardo Rubén Catania</h3>
-            <p className="acui-instructor-title">Desarrollador de Sistemas de Acuicultura Simbiótica</p>
-            <p className="acui-instructor-role">Especialista en Producción Controlada Autosuficiente</p>
+            <p className="acui-instructor-title">Desarrollador de Sistemas de Acuicultura Controlada</p>
+            <p className="acui-instructor-role">Especialista en Producción Acuícola Autosuficiente</p>
 
             <div className="acui-instructor-credentials">
               <div className="acui-credential">
@@ -41,11 +41,15 @@ function AcuiInstructor() {
               </div>
               <div className="acui-credential">
                 <span className="acui-credential-icon">📍</span>
-                <span>Instalaciones en San Vicente, Buenos Aires</span>
+                <span>Instalaciones con producción real en San Vicente, Buenos Aires</span>
               </div>
               <div className="acui-credential">
                 <span className="acui-credential-icon">🐟</span>
-                <span>+25 años de experiencia en producción acuícola controlada</span>
+                <span>+50 años como productor acuícola y +30 años como educador</span>
+              </div>
+              <div className="acui-credential">
+                <span className="acui-credential-icon">🏛️</span>
+                <span>Ex docente universitario en acuicultura</span>
               </div>
               <div className="acui-credential">
                 <span className="acui-credential-icon">🌿</span>
@@ -53,12 +57,16 @@ function AcuiInstructor() {
               </div>
               <div className="acui-credential">
                 <span className="acui-credential-icon">🌎</span>
-                <span>Capacitador internacional — FONGAR, Panamá, Costa Rica</span>
+                <span>Capacitador con alumnos internacionales</span>
+              </div>
+              <div className="acui-credential">
+                <span className="acui-credential-icon">🏆</span>
+                <span>Premio provincial, premio nacional y reconocimiento del Concejo Deliberante de San Vicente</span>
               </div>
             </div>
 
             <blockquote className="acui-instructor-quote">
-              "No enseño teoría de libros. Enseño lo que funciona, lo que probé en mis propios tanques durante más de dos décadas."
+              "No enseño teoría de libros. Enseño lo que funciona, lo que probé en mis propios tanques durante más de cinco décadas."
             </blockquote>
           </div>
         </div>

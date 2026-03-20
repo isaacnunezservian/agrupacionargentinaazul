@@ -2,13 +2,12 @@ import './AcuiPricing.css';
 
 function AcuiPricing() {
   const included = [
-    '7 unidades de formación integral (teoría + práctica)',
+    '21 semanas de formación integral — 126 horas (teoría + práctica)',
     'Clases virtuales en vivo los martes (3 hs semanales)',
     'Prácticas presenciales en San Vicente los viernes (3 hs)',
     'Asesoramiento técnico personalizado',
-    'Acceso a instalaciones de la Escuela "Productor Acuícola"',
-    'Prácticas bonificadas (valor de mercado: $150.000/alumno/día)',
-    'Mentoring para tu proyecto productivo individual',
+    'Acceso a instalaciones con producción acuícola real',
+    'Mentoría para tu proyecto productivo individual',
     'Certificación al completar el programa',
   ];
 
@@ -34,7 +33,7 @@ function AcuiPricing() {
               <span className="acui-pricing-value">100.000</span>
               <span className="acui-pricing-period">ARS</span>
             </div>
-            <p className="acui-pricing-desc">Inversión total por el programa completo de 5 meses</p>
+            <p className="acui-pricing-desc">Inversión total por el programa completo de 21 semanas</p>
           </div>
 
           <div className="acui-pricing-divider"></div>
@@ -58,8 +57,8 @@ function AcuiPricing() {
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
             </svg>
             <span>
-              Las prácticas tienen un valor real de <strong>$150.000/alumno/día</strong> —
-              bonificadas para este programa
+              Prácticas en instalaciones con <strong>producción acuícola real</strong> —
+              aprendés con tanques, peces y cultivos reales
             </span>
           </div>
 

@@ -4,10 +4,13 @@ function AcuiHero() {
   return (
     <section className="acui-hero">
       <div className="acui-hero-bg">
-        <img
-          src="/acuicultura/catania-tilapia-azul.jpg"
-          alt="Eduardo Catania con tilapia en instalación acuícola"
-          className="acui-hero-img"
+        <video
+          src="/acuicultura/hero-video.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="acui-hero-video"
         />
         <div className="acui-hero-overlay"></div>
       </div>
@@ -41,7 +44,7 @@ function AcuiHero() {
           </div>
           <div className="acui-hero-stat-divider"></div>
           <div className="acui-hero-stat">
-            <span className="acui-counter" data-target="25" data-prefix="+" data-suffix=" años">0</span>
+            <span className="acui-counter" data-target="50" data-prefix="+" data-suffix=" años">0</span>
             <span className="acui-hero-stat-label">Experiencia</span>
           </div>
         </div>
@@ -69,19 +72,10 @@ function AcuiHero() {
           </button>
         </div>
 
-        <div className="acui-hero-urgency animate-on-scroll">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" className="acui-urgency-icon">
-            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm1-8h4v2h-6V7h2v5z"/>
-          </svg>
-          <span>Solo <strong>25 cupos</strong> disponibles — Inicio 2026</span>
-        </div>
+  
       </div>
 
-      <div className="acui-hero-scroll-indicator">
-        <div className="acui-scroll-mouse">
-          <div className="acui-scroll-wheel"></div>
-        </div>
-      </div>
+     
     </section>
   );
 }

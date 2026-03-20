@@ -80,14 +80,16 @@
   grid-column: span 2;
 }
 
-.acui-proof-gallery-item img {
+.acui-proof-gallery-item img,
+.acui-proof-gallery-item video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.acui-proof-gallery-item:hover img {
+.acui-proof-gallery-item:hover img,
+.acui-proof-gallery-item:hover video {
   transform: scale(1.06);
 }
 
@@ -169,65 +171,369 @@
 }
 
 .acui-testimonials-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .acui-testimonial-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
-  padding: 2rem;
-  max-width: 450px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.acui-testimonial-placeholder {
-  border-style: dashed;
-  opacity: 0.7;
+.acui-testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
 }
 
-.acui-testimonial-stars {
-  color: #ffc107;
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-  margin-bottom: 0.75rem;
+/* Card poster — CSS designed, click opens modal */
+.acui-testimonial-video-wrapper {
+  position: relative;
+  aspect-ratio: 1/1;
+  background: #0d1b2e;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.acui-testimonial-text {
-  font-style: italic;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 1.25rem;
-}
-
-.acui-testimonial-author {
+.acui-testimonial-poster {
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
+  background: linear-gradient(145deg, #0d1b2e 0%, #1a3558 50%, #0f2540 100%);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
 }
 
-.acui-testimonial-avatar {
-  width: 40px;
-  height: 40px;
+.acui-testimonial-video-wrapper:hover .acui-testimonial-poster {
+  background: linear-gradient(145deg, #0f2540 0%, #1f3d6a 50%, #122d4e 100%);
+}
+
+/* Decorative radial glow */
+.acui-testimonial-poster-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 70% at 50% 55%, rgba(92, 157, 203, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.acui-testimonial-poster-quote {
+  color: rgba(92, 157, 203, 0.35);
+  flex-shrink: 0;
+}
+
+/* Play circle */
+.acui-testimonial-poster-play {
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.22);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.25s ease;
 }
 
-.acui-testimonial-author strong {
-  display: block;
+.acui-testimonial-video-wrapper:hover .acui-testimonial-poster-play {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 0 8px rgba(92, 157, 203, 0.15);
+  transform: scale(1.08);
+}
+
+.acui-testimonial-poster-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* Info below video — YouTube link button */
+.acui-testimonial-info {
+  padding: 0.75rem 1rem;
+}
+
+.acui-testimonial-yt-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.6rem 1rem;
   font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgba(255, 0, 0, 0.12);
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  transition: all 0.2s ease;
+}
+
+.acui-testimonial-yt-link:hover {
+  background: rgba(255, 0, 0, 0.22);
+  border-color: rgba(255, 0, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+.acui-testimonial-yt-link svg {
+  flex-shrink: 0;
+  color: #ff0000;
+}
+
+/* Fullscreen video modal */
+.acui-video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.92);
+  animation: acui-modal-fade-in 0.25s ease;
+}
+
+@keyframes acui-modal-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.acui-video-modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: min(460px, 90vw);
+  max-height: 96vh;
+}
+
+.acui-video-modal-close {
+  position: absolute;
+  top: -48px;
+  right: -8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+.acui-video-modal-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.acui-video-modal-player {
+  width: 100%;
+  max-height: 84vh;
+  aspect-ratio: 9/16;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #000;
+}
+
+.acui-video-modal-yt-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.acui-video-modal-yt-link:hover {
+  background: rgba(255, 0, 0, 0.25);
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+.acui-video-modal-yt-link svg {
+  color: #ff0000;
+}
+
+/* Mega link — +100 testimonios */
+.acui-testimonials-mega-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  text-decoration: none;
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.acui-testimonials-mega-link:hover {
+  background: rgba(255, 0, 0, 0.14);
+  border-color: rgba(255, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.acui-mega-link-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(255, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acui-mega-link-icon svg {
+  color: #ff0000;
+}
+
+.acui-mega-link-text {
+  flex: 1;
+}
+
+.acui-mega-link-text strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-white);
+  margin-bottom: 0.2rem;
+}
+
+.acui-mega-link-text span {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.acui-mega-link-arrow {
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.4);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.acui-testimonials-mega-link:hover .acui-mega-link-arrow {
+  transform: translateX(4px);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Playlists section */
+.acui-playlists {
+  margin-top: 3rem;
+}
+
+.acui-playlists-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.acui-playlists-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.5rem;
+}
+
+.acui-playlists-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.acui-playlist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.acui-playlist-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.acui-playlist-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(76, 175, 80, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: #7ddf80;
+  transition: transform 0.3s ease;
+}
+
+.acui-playlist-card:hover .acui-playlist-icon {
+  transform: scale(1.08);
+}
+
+.acui-playlist-card strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.acui-playlist-card span {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.acui-playlist-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  background: rgba(255, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.acui-playlist-card:hover .acui-playlist-cta {
+  background: rgba(255, 0, 0, 0.2);
   color: var(--color-white);
 }
 
-.acui-testimonial-author span {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+.acui-playlist-cta svg {
+  color: #ff0000;
 }
 
 @media (max-width: 768px) {
@@ -246,5 +552,34 @@
 
   .acui-proof-entity-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .acui-testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .acui-testimonials-mega-link {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .acui-mega-link-arrow {
+    display: none;
+  }
+
+  .acui-playlists-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .acui-video-modal-content {
+    max-width: 95vw;
+  }
+
+  .acui-video-modal-close {
+    top: -44px;
+    right: 0;
   }
 }

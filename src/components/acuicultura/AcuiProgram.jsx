@@ -60,9 +60,9 @@ function AcuiProgram() {
           <span className="acui-section-badge">Programa Completo</span>
           <h2 className="acui-section-title">¿Qué Vas a Aprender?</h2>
           <p className="acui-section-subtitle">
-            7 unidades con sistema de doble acción: <strong>teoría los martes</strong> (virtual) y{' '}
+            7 unidades en 21 semanas con sistema de doble acción: <strong>teoría los martes</strong> (virtual) y{' '}
             <strong>práctica los viernes</strong> (presencial en San Vicente).
-            Formación integral para que puedas producir y vender desde el día uno.
+            126 horas totales de formación teórico-práctica para que puedas producir y vender desde el día uno.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ function AcuiProgram() {
             <div className="acui-modality-icon">💻</div>
             <div>
               <strong>Martes — Virtual</strong>
-              <p>3 horas de clases teóricas online + asesoramiento</p>
+              <p>3 horas de clases teóricas en vivo + asesoramiento</p>
             </div>
           </div>
           <div className="acui-modality-card">

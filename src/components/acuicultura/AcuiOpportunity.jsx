@@ -8,9 +8,11 @@ function AcuiOpportunity() {
           <span className="acui-section-badge">Oportunidad de Mercado</span>
           <h2 className="acui-section-title">¿Por Qué Acuicultura?</h2>
           <p className="acui-section-subtitle">
-            La acuicultura en Argentina dejó de ser marginal para convertirse en un
-            <strong> sector con alto potencial exportador</strong>. Quienes se formen hoy
-            estarán a la vanguardia de una industria en pleno crecimiento.
+            Según el último informe SOFIA de la FAO, la acuicultura ya provee el{' '}
+            <strong>60% del pescado que se consume en el mundo</strong> porque la pesca
+            está en declive por la sobrepesca. En Argentina, la exportación de pescado
+            supera a la de carne vacuna. Quienes se formen hoy estarán a la vanguardia
+            de una industria en pleno crecimiento.
           </p>
         </div>
 
@@ -18,51 +20,57 @@ function AcuiOpportunity() {
           <div className="acui-pole-card animate-on-scroll">
             <div className="acui-pole-icon">
               <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
               </svg>
             </div>
-            <div className="acui-pole-number">01</div>
-            <h3>Polo Patagonia Norte</h3>
-            <p className="acui-pole-focus">Aguas frías — Jaulas flotantes</p>
-            <p className="acui-pole-species">Trucha Arcoíris</p>
+            <h3>La demanda crece, la pesca no alcanza</h3>
+            <p className="acui-pole-focus">La pesca natural está estancada por la sobrepesca. La acuicultura es la única fuente de producción que sigue creciendo para cubrir la demanda mundial de proteína.</p>
             <div className="acui-pole-stat">
-              <span className="acui-pole-stat-number">70%</span>
-              <span className="acui-pole-stat-label">Exportación (EE.UU., Japón, Brasil)</span>
+              <span className="acui-pole-stat-number">51%</span>
+              <span className="acui-pole-stat-label">De la producción pesquera mundial ya proviene de acuicultura — FAO SOFIA 2024</span>
             </div>
           </div>
 
           <div className="acui-pole-card acui-pole-featured animate-on-scroll">
-            <div className="acui-pole-ribbon">Mayor Oportunidad</div>
+            <div className="acui-pole-ribbon"> </div>
             <div className="acui-pole-icon">
               <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
+                <path d="M12 20V10M18 20V4M6 20v-4"/>
               </svg>
             </div>
-            <div className="acui-pole-number">02</div>
-            <h3>Polo NEA y Centro</h3>
-            <p className="acui-pole-focus">Aguas cálidas — Estanques excavados</p>
-            <p className="acui-pole-species">Pacú y Surubí</p>
+            <h3>Producción récord y en expansión</h3>
+            <p className="acui-pole-focus">La producción acuícola mundial marcó un nuevo récord histórico. Se proyecta que supere los 200 millones de toneladas antes de 2030.</p>
             <div className="acui-pole-stat">
-              <span className="acui-pole-stat-number">85%</span>
-              <span className="acui-pole-stat-label">Mercado interno (supermercados, restaurantes)</span>
+              <span className="acui-pole-stat-number">185 Mt</span>
+              <span className="acui-pole-stat-label">Producción acuícola récord en 2022, superando por primera vez a la pesca — FAO</span>
             </div>
           </div>
 
           <div className="acui-pole-card animate-on-scroll">
             <div className="acui-pole-icon">
               <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
               </svg>
             </div>
-            <div className="acui-pole-number">03</div>
-            <h3>Polo Emergente</h3>
-            <p className="acui-pole-focus">Maricultura costera</p>
-            <p className="acui-pole-species">Mejillones y Ostras</p>
+            <h3>Argentina: oportunidad sin explotar</h3>
+            <p className="acui-pole-focus">Argentina exporta más pescado que carne vacuna, pero su producción acuícola es mínima. Hay un espacio enorme para quienes se formen hoy.</p>
             <div className="acui-pole-stat">
-              <span className="acui-pole-stat-number">90%</span>
-              <span className="acui-pole-stat-label">Consumo interno (gastronomía premium)</span>
+              <span className="acui-pole-stat-number">60%</span>
+              <span className="acui-pole-stat-label">Del pescado consumido en el mundo proviene de criaderos, no del mar — FAO</span>
             </div>
+          </div>
+        </div>
+
+        <div className="acui-opportunity-controlled animate-on-scroll">
+          <div className="acui-opportunity-controlled-content">
+            <h3 className="acui-opportunity-controlled-title">¿Por Qué Acuicultura Controlada?</h3>
+            <p className="acui-opportunity-controlled-text">
+              A diferencia de la producción en mar abierto —que contamina el ambiente y enfrenta
+              crisis como las de Chile y Europa—, la <strong>acuicultura controlada</strong> opera
+              en circuito cerrado en tierra: mayor productividad por m³, cero contaminación ambiental
+              y economía circular donde los desechos se convierten en nuevos ingresos.
+            </p>
           </div>
         </div>
 

@@ -19,13 +19,13 @@ function AcuiCTA() {
               <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#7ddf80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Formación de 5 meses con el mayor experto del país</span>
+              <span>21 semanas de formación con +50 años de experiencia respaldándote</span>
             </div>
             <div className="acui-final-cta-benefit">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#7ddf80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
-              <span>Teoría + práctica real en instalaciones profesionales</span>
+              <span>Teoría + práctica real en instalaciones con producción acuícola</span>
             </div>
             <div className="acui-final-cta-benefit">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#7ddf80" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

@@ -13,11 +13,11 @@
   z-index: 0;
 }
 
-.acui-hero-img {
+.acui-hero-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center;
 }
 
 .acui-hero-overlay {
