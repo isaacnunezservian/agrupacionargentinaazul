@@ -30,7 +30,7 @@ function AcuiPricing() {
             <span className="acui-pricing-label">Programa Intensivo 2026</span>
             <div className="acui-pricing-amount">
               <span className="acui-pricing-currency">$</span>
-              <span className="acui-pricing-value">100.000</span>
+              <span className="acui-pricing-value">3.000.000</span>
               <span className="acui-pricing-period">ARS</span>
             </div>
             <p className="acui-pricing-desc">Inversión total por el programa completo de 21 semanas</p>
