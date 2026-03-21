@@ -89,6 +89,52 @@
   margin-left: 0.5rem;
 }
 
+.acui-pricing-discount-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff6b35, #e53e3e);
+  color: #fff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: var(--font-body);
+  animation: acuiBadgePulse 2s ease-in-out infinite;
+}
+
+@keyframes acuiBadgePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+.acui-pricing-original {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.acui-pricing-original-text {
+  font-size: 0.9rem;
+  color: #5a6a7e;
+  font-family: var(--font-body);
+}
+
+.acui-pricing-original-price {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.acui-pricing-installments {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
 .acui-pricing-desc {
   font-size: 0.95rem;
   color: #5a6a7e;

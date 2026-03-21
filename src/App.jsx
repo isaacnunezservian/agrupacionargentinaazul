@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Impact from './components/Impact';
+import AcuiPromo from './components/AcuiPromo';
 import Team from './components/Team';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
@@ -37,6 +38,7 @@ function HomePage() {
       <Hero />
       <About />
       <Impact />
+      <AcuiPromo />
       <Team />
       <CallToAction />
       <Footer />

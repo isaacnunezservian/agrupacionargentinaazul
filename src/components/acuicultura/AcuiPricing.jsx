@@ -28,12 +28,22 @@ function AcuiPricing() {
 
           <div className="acui-pricing-card-header">
             <span className="acui-pricing-label">Programa Intensivo 2026</span>
+            <div className="acui-pricing-discount-badge">
+              🔥 Descuento especial marzo & abril
+            </div>
+            <div className="acui-pricing-original">
+              <span className="acui-pricing-original-text">Precio regular:</span>
+              <span className="acui-pricing-original-price">$4.000.000</span>
+            </div>
+            <div className="acui-pricing-amount">
+              <span className="acui-pricing-installments">5 cuotas de</span>
+            </div>
             <div className="acui-pricing-amount">
               <span className="acui-pricing-currency">$</span>
-              <span className="acui-pricing-value">3.000.000</span>
+              <span className="acui-pricing-value">600.000</span>
               <span className="acui-pricing-period">ARS</span>
             </div>
-            <p className="acui-pricing-desc">Inversión total por el programa completo de 21 semanas</p>
+            <p className="acui-pricing-desc">Total: $3.000.000 — Ahorrás $1.000.000 con el precio promocional</p>
           </div>
 
           <div className="acui-pricing-divider"></div>
