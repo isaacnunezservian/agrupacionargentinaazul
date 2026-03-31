@@ -9,6 +9,7 @@ import AcuiFAQ from './AcuiFAQ';
 import AcuiCTA from './AcuiCTA';
 import AcuiNavbar from './AcuiNavbar';
 import AcuiFooter from './AcuiFooter';
+// import AcuiTeam from './AcuiTeam';
 
 function AcuiculturaPage() {
   useEffect(() => {
@@ -69,6 +70,7 @@ function AcuiculturaPage() {
       <AcuiOpportunity />
       <AcuiProgram />
       <AcuiInstructor />
+      {/* <AcuiTeam /> */}
       <AcuiSocialProof />
       <AcuiPricing />
       <AcuiFAQ />
@@ -77,7 +79,7 @@ function AcuiculturaPage() {
 
       {/* WhatsApp floating button - mobile */}
       <a
-        href="https://wa.me/5491170061908?text=Hola%2C%20quiero%20información%20sobre%20el%20programa%20de%20Acuicultura"
+        href="https://wa.me/5491133765421?text=Hola%2C%20quiero%20información%20sobre%20el%20programa%20de%20Acuicultura"
         className="acui-whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"

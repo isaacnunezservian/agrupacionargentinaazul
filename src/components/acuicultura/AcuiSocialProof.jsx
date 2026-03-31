@@ -151,7 +151,7 @@ function AcuiSocialProof() {
               <span>Productor Acuícola</span>
             </div>
             <div className="acui-proof-entity">
-              <strong>Fundación Azul</strong>
+              <strong>Fundación Argentina Azul</strong>
               <span>Desarrollo marítimo</span>
             </div>
           </div>

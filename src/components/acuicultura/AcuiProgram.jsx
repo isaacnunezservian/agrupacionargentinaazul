@@ -61,7 +61,7 @@ function AcuiProgram() {
           <h2 className="acui-section-title">¿Qué Vas a Aprender?</h2>
           <p className="acui-section-subtitle">
             7 unidades en 21 semanas con sistema de doble acción: <strong>teoría los martes</strong> (virtual) y{' '}
-            <strong>práctica los viernes</strong> (presencial en San Vicente).
+            <strong>práctica los jueves</strong> (presencial en San Vicente).
             126 horas totales de formación teórico-práctica para que puedas producir y vender desde el día uno.
           </p>
         </div>
@@ -77,7 +77,7 @@ function AcuiProgram() {
           <div className="acui-modality-card">
             <div className="acui-modality-icon">🏗️</div>
             <div>
-              <strong>Viernes — Presencial</strong>
+              <strong>Jueves — Presencial (14 a 17 hs)</strong>
               <p>3 horas de práctica en la Escuela de Acuicultura, San Vicente</p>
             </div>
           </div>
@@ -103,7 +103,7 @@ function AcuiProgram() {
         <div className="acui-program-cta animate-on-scroll">
           <p>Al finalizar, tendrás las habilidades para <strong>montar, operar y comercializar</strong> tu propio emprendimiento acuícola.</p>
           <a
-            href="https://wa.me/5491170061908?text=Hola%2C%20quiero%20más%20detalles%20sobre%20el%20programa%20de%20Acuicultura"
+            href="https://wa.me/5491133765421?text=Hola%2C%20quiero%20m%C3%A1s%20detalles%20sobre%20el%20programa%20de%20Acuicultura"
             className="acui-btn-primary"
             target="_blank"
             rel="noopener noreferrer"

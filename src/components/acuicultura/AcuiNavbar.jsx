@@ -25,14 +25,16 @@ function AcuiNavbar() {
       <div className="acui-navbar-container">
         <Link to="/" className="acui-navbar-brand">
           <div className="acui-navbar-logo">
-            <svg className="acui-logo-wave" viewBox="0 0 40 40" width="36" height="36">
-              <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.3"/>
-              <path d="M8 22 Q14 16, 20 22 Q26 28, 32 22" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-              <path d="M8 18 Q14 12, 20 18 Q26 24, 32 18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" opacity="0.5"/>
-            </svg>
+            <img
+              src="/acuicultura/logo-aquadeal.jpg"
+              alt="Aquadeal Argentina"
+              className="acui-navbar-logo-img"
+              width="40"
+              height="40"
+            />
             <div className="acui-navbar-brand-text">
-              <span className="acui-navbar-title">Argentina Azul</span>
-              <span className="acui-navbar-subtitle">Acuicultura</span>
+              <span className="acui-navbar-title">Aquadeal</span>
+              <span className="acui-navbar-subtitle">Argentina</span>
             </div>
           </div>
         </Link>
@@ -44,7 +46,7 @@ function AcuiNavbar() {
           <button onClick={() => scrollToSection('acui-inversion')} className="acui-nav-link">Inversión</button>
           <button onClick={() => scrollToSection('acui-faq')} className="acui-nav-link">FAQ</button>
           <a
-            href="https://wa.me/5491170061908?text=Hola%2C%20quiero%20información%20sobre%20el%20programa%20de%20Acuicultura"
+            href="https://wa.me/5491133765421?text=Hola%2C%20quiero%20información%20sobre%20el%20programa%20de%20Acuicultura"
             className="acui-nav-cta"
             target="_blank"
             rel="noopener noreferrer"

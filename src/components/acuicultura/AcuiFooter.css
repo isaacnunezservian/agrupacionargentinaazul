@@ -31,6 +31,13 @@
   color: var(--color-white);
 }
 
+.acui-footer-logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 .acui-footer-title {
   display: block;
   font-family: var(--font-display);

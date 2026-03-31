@@ -51,7 +51,7 @@ function AcuiHero() {
 
         <div className="acui-hero-actions animate-on-scroll">
           <a
-            href="https://wa.me/5491170061908?text=Hola%2C%20quiero%20inscribirme%20en%20el%20programa%20de%20Acuicultura"
+            href="https://wa.me/5491133765421?text=Hola%2C%20quiero%20inscribirme%20en%20el%20programa%20de%20Acuicultura"
             className="acui-hero-cta"
             target="_blank"
             rel="noopener noreferrer"

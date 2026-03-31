@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: '¿Cuál es la modalidad del programa?',
-    a: 'Es un sistema de doble acción: los martes tenés 3 horas de clases teóricas virtuales en vivo (podés conectarte desde cualquier lugar), y los viernes 3 horas de prácticas presenciales en las instalaciones de la Escuela de Acuicultura en San Vicente, Buenos Aires. Son 21 semanas con un total de 126 horas de formación.'
+    a: 'Es un sistema de doble acción: los martes tenés 3 horas de clases teóricas virtuales en vivo (podés conectarte desde cualquier lugar), y los jueves de 14 a 17 hs tenés 3 horas de prácticas presenciales en las instalaciones de la Escuela de Acuicultura en San Vicente, Buenos Aires. Son 21 semanas con un total de 126 horas de formación.'
   },
   {
     q: '¿Dónde son las prácticas presenciales?',
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: '¿Cuántas horas semanales requiere?',
-    a: '6 horas semanales: 3 horas de clases teóricas virtuales los martes + 3 horas de prácticas presenciales los viernes, con asesoramiento adicional. Son 21 semanas (126 horas totales). Es compatible con un trabajo o actividad diaria.'
+    a: '6 horas semanales: 3 horas de clases teóricas virtuales los martes + 3 horas de prácticas presenciales los jueves de 14 a 17 hs, con asesoramiento adicional. Son 21 semanas (126 horas totales). Es compatible con un trabajo o actividad diaria.'
   },
   {
     q: '¿Qué puedo hacer al terminar el programa?',
@@ -73,7 +73,7 @@ function AcuiFAQ() {
         <div className="acui-faq-cta animate-on-scroll">
           <p>¿Tenés otra pregunta?</p>
           <a
-            href="https://wa.me/5491170061908?text=Hola%2C%20tengo%20una%20consulta%20sobre%20el%20programa%20de%20Acuicultura"
+            href="https://wa.me/5491133765421?text=Hola%2C%20tengo%20una%20consulta%20sobre%20el%20programa%20de%20Acuicultura"
             className="acui-btn-primary"
             target="_blank"
             rel="noopener noreferrer"

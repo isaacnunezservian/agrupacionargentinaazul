@@ -4,7 +4,7 @@ function AcuiPricing() {
   const included = [
     '21 semanas de formación integral — 126 horas (teoría + práctica)',
     'Clases virtuales en vivo los martes (3 hs semanales)',
-    'Prácticas presenciales en San Vicente los viernes (3 hs)',
+    'Prácticas presenciales en San Vicente los jueves de 14 a 17 hs (3 hs)',
     'Asesoramiento técnico personalizado',
     'Acceso a instalaciones con producción acuícola real',
     'Mentoría para tu proyecto productivo individual',
@@ -29,21 +29,29 @@ function AcuiPricing() {
           <div className="acui-pricing-card-header">
             <span className="acui-pricing-label">Programa Intensivo 2026</span>
             <div className="acui-pricing-discount-badge">
-              🔥 Descuento especial marzo & abril
+              🔥 Descuento especial solo abril
             </div>
             <div className="acui-pricing-original">
               <span className="acui-pricing-original-text">Precio regular:</span>
               <span className="acui-pricing-original-price">$4.000.000</span>
             </div>
             <div className="acui-pricing-amount">
-              <span className="acui-pricing-installments">5 cuotas de</span>
+              <span className="acui-pricing-installments">6 cuotas de</span>
             </div>
             <div className="acui-pricing-amount">
               <span className="acui-pricing-currency">$</span>
-              <span className="acui-pricing-value">600.000</span>
+              <span className="acui-pricing-value">500.000</span>
               <span className="acui-pricing-period">ARS</span>
             </div>
             <p className="acui-pricing-desc">Total: $3.000.000 — Ahorrás $1.000.000 con el precio promocional</p>
+
+            <div className="acui-pricing-cash">
+              <span className="acui-pricing-cash-icon">💵</span>
+              <div>
+                <strong>Pago en efectivo: $2.500.000</strong>
+                <span> — Ahorrás $500.000 adicionales</span>
+              </div>
+            </div>
           </div>
 
           <div className="acui-pricing-divider"></div>
@@ -73,7 +81,7 @@ function AcuiPricing() {
           </div>
 
           <a
-            href="https://wa.me/5491170061908?text=Hola%2C%20quiero%20inscribirme%20en%20el%20programa%20de%20Acuicultura%202026"
+            href="https://wa.me/5491133765421?text=Hola%2C%20quiero%20inscribirme%20en%20el%20programa%20de%20Acuicultura%202026"
             className="acui-pricing-cta"
             target="_blank"
             rel="noopener noreferrer"

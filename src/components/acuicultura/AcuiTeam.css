@@ -1,0 +1,81 @@
+.acui-team {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--color-gray);
+}
+
+.acui-team-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.acui-team-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.acui-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.acui-team-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--color-white);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(29, 56, 94, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 240px;
+}
+
+.acui-team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(29, 56, 94, 0.12);
+}
+
+.acui-team-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-navy), var(--color-blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.8rem;
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.acui-team-name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--color-navy);
+  margin-bottom: 0.35rem;
+}
+
+.acui-team-role {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #4caf50;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .acui-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .acui-team-card {
+    padding: 1.5rem 1rem;
+    max-width: none;
+  }
+}

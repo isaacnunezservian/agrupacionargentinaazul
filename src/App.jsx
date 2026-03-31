@@ -50,7 +50,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/acuicultura" element={<AcuiculturaPage />} />
+      <Route path="/aquadeal" element={<AcuiculturaPage />} />
     </Routes>
   );
 }

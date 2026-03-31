@@ -36,7 +36,7 @@ function AcuiCTA() {
           </div>
 
           <a
-            href="https://wa.me/5491170061908?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20en%20el%20programa%20de%20Acuicultura%202026"
+            href="https://wa.me/5491133765421?text=Hola%2C%20quiero%20reservar%20mi%20lugar%20en%20el%20programa%20de%20Acuicultura%202026"
             className="acui-final-cta-btn"
             target="_blank"
             rel="noopener noreferrer"

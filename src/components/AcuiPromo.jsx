@@ -51,7 +51,7 @@ function AcuiPromo() {
         </div>
 
         <div className="acui-promo-actions animate-on-scroll">
-          <Link to="/acuicultura" className="acui-promo-cta">
+          <Link to="/aquadeal" className="acui-promo-cta">
             Conocé el Programa Completo
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -61,7 +61,7 @@ function AcuiPromo() {
 
         <div className="acui-promo-urgency animate-on-scroll">
           <span className="acui-promo-urgency-icon">🔥</span>
-          Solo <strong>25 cupos</strong> — Descuento especial marzo &amp; abril
+          Solo <strong>25 cupos</strong> — Descuento especial solo abril
         </div>
       </div>
     </section>
