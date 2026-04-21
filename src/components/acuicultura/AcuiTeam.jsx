@@ -1,11 +1,37 @@
 import './AcuiTeam.css';
 
 const team = [
-  { name: 'Gabriel Polio', role: 'Director del Proyecto', initials: 'GP' },
-  { name: 'Yamila Schwarzkopf', role: 'Gerente Comercial', initials: 'YS' },
-  { name: 'Matías Cortiña', role: 'Comunicación', initials: 'MC' },
-  { name: 'Guadalupe Pollio', role: 'Community Manager', initials: 'GP' },
-  { name: 'Rafael Nuñez', role: 'Desarrollador de Sistemas & IA', initials: 'RN' },
+  {
+    name: 'Gabriel Pollio',
+    role: 'Director del Proyecto',
+    image: '/gabriel-actualizado.jpeg',
+    alt: 'Gabriel Pollio'
+  },
+  {
+    name: 'Matías Cortiña',
+    role: 'Comunicación y Gestión',
+    image: '/matias.jpg',
+    alt: 'Matías Cortiña'
+  },
+  {
+    name: 'Yamila Schwarzkopf',
+    role: 'Difusión y Relaciones Institucionales',
+    image: '/yamila.jpg',
+    alt: 'Yamila Schwarzkopf'
+  },
+
+  {
+    name: 'Guadalupe Polio',
+    role: 'Community manager y gestora de redes del equipo',
+    image: '/guadalupe-polio.jpg',
+    alt: 'Guadalupe Polio'
+  },
+  {
+    name: 'Rafael Núñez',
+    role: 'Desarrollador de Sistemas & IA',
+    image: '/rafael.jpg',
+    alt: 'Rafael Núñez'
+  },
 ];
 
 function AcuiTeam() {
@@ -24,7 +50,14 @@ function AcuiTeam() {
         <div className="acui-team-grid">
           {team.map((member, i) => (
             <div className="acui-team-card animate-on-scroll" key={i}>
-              <div className="acui-team-avatar">{member.initials}</div>
+              <div className="acui-team-photo-frame">
+                <img
+                  src={member.image}
+                  alt={member.alt}
+                  className="acui-team-photo"
+                  loading="lazy"
+                />
+              </div>
               <h3 className="acui-team-name">{member.name}</h3>
               <span className="acui-team-role">{member.role}</span>
             </div>

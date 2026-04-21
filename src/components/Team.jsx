@@ -76,7 +76,7 @@ const Team = () => {
           <div className="team-card team-card-coordinator animate-on-scroll">
             <div className="leadership-glow coordinator-glow"></div>
             <div className="team-card-image">
-              <img src="/gabriel.png" alt="Gabriel Pollio" />
+              <img src="/gabriel-actualizado.jpeg" alt="Gabriel Pollio" />
               <div className="team-card-overlay"></div>
               <div className="leadership-icon coordinator-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -29,6 +29,13 @@ function HomePage() {
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
     animatedElements.forEach(el => observer.observe(el));
 
+    const hash = window.location.hash;
+    if (hash) {
+      window.setTimeout(() => {
+        document.querySelector(hash)?.scrollIntoView({ behavior: 'auto', block: 'start' });
+      }, 300);
+    }
+
     return () => observer.disconnect();
   }, []);
 

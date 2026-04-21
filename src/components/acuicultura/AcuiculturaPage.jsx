@@ -3,13 +3,13 @@ import AcuiHero from './AcuiHero';
 import AcuiOpportunity from './AcuiOpportunity';
 import AcuiProgram from './AcuiProgram';
 import AcuiInstructor from './AcuiInstructor';
+import AcuiTeam from './AcuiTeam';
 import AcuiSocialProof from './AcuiSocialProof';
 import AcuiPricing from './AcuiPricing';
 import AcuiFAQ from './AcuiFAQ';
 import AcuiCTA from './AcuiCTA';
 import AcuiNavbar from './AcuiNavbar';
 import AcuiFooter from './AcuiFooter';
-// import AcuiTeam from './AcuiTeam';
 
 function AcuiculturaPage() {
   useEffect(() => {
@@ -57,6 +57,13 @@ function AcuiculturaPage() {
 
     counters.forEach(el => counterObserver.observe(el));
 
+    const hash = window.location.hash;
+    if (hash) {
+      window.setTimeout(() => {
+        document.querySelector(hash)?.scrollIntoView({ behavior: 'auto', block: 'start' });
+      }, 300);
+    }
+
     return () => {
       observer.disconnect();
       counterObserver.disconnect();
@@ -70,7 +77,7 @@ function AcuiculturaPage() {
       <AcuiOpportunity />
       <AcuiProgram />
       <AcuiInstructor />
-      {/* <AcuiTeam /> */}
+      <AcuiTeam />
       <AcuiSocialProof />
       <AcuiPricing />
       <AcuiFAQ />
