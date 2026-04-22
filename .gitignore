@@ -12,10 +12,10 @@ dist
 dist-ssr
 *.local
 
-# Playwright screenshots
-*.png
-screenshot.mjs
-skills-lock.json
+# Playwright screenshots (root only, not assets in public/)
+/*.png
+/screenshot.mjs
+/skills-lock.json
 
 # Editor directories and files
 .vscode/*
