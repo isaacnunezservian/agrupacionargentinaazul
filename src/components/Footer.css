@@ -20,33 +20,17 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
 }
 
-.footer-wave {
-  color: var(--color-blue);
-}
-
-.footer-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.footer-agrupacion {
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.75rem;
-  color: var(--color-white);
-  letter-spacing: 1px;
-  opacity: 0.8;
-}
-
-.footer-argentina {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  color: var(--color-blue);
-  font-weight: 400;
+.footer-logo-image {
+  width: min(280px, 72vw);
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 0.5rem 0.75rem;
 }
 
 /* Footer Info */

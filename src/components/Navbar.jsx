@@ -27,28 +27,11 @@ const Navbar = () => {
       <div className="container navbar-content">
         <div className="navbar-logo" onClick={() => scrollToSection('hero')}>
           <div className={`logo-container ${scrolled ? 'logo-animate' : ''}`}>
-            {/* SVG de la ola del logo */}
-            <svg className="logo-wave" width="50" height="50" viewBox="0 0 200 200" fill="none">
-              <path 
-                d="M50 100C70 80, 90 80, 110 100C130 120, 150 120, 170 100" 
-                stroke="currentColor" 
-                strokeWidth="8" 
-                strokeLinecap="round"
-                fill="none"
-              />
-              <path 
-                d="M40 120C60 100, 80 100, 100 120C120 140, 140 140, 160 120" 
-                stroke="currentColor" 
-                strokeWidth="6" 
-                strokeLinecap="round"
-                fill="none"
-                opacity="0.6"
-              />
-            </svg>
-          </div>
-          <div className="logo-text">
-            <span className="logo-agrupacion">AGRUPACIÓN</span>
-            <span className="logo-argentina">ARGENTINA AZUL</span>
+            <img
+              src="/logo-agrupacion-argentina-azul.png"
+              alt="Agrupación Argentina Azul"
+              className="logo-image"
+            />
           </div>
         </div>
 
